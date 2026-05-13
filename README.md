@@ -1,5 +1,7 @@
 # 📓 Learning HTTP Requests and Responses 
 
+![Member Portal Demo](demo.gif)
+
 This is the technical record of everything I learned during this project. 
 
 ### **The Journey:**
