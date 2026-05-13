@@ -48,8 +48,8 @@ def read_index():
             <td>
                 <a href="/edit/{user['username']}">Edit</a>
                 |
+                <!-- html forms do not support put or delete. the only available requests are GET and POST. -->
                 <form action="/delete/{user['username']}" method="post" style="display:inline;">
-                # html forms do not support put or delete. the only available requests are GET and POST.
                     <button type="submit" style="color: red;">Delete</button>
                 </form>
             </td>
@@ -65,8 +65,8 @@ def read_index():
             <div style="max-width: 1200px; margin: auto; text-align: center;">
                 <div style="text-align: left; background: #f9f9f9; padding: 20px; border-radius: 10px;">
                     <h3>Add New Member</h3>
+                    <!-- post is gonna redirect the user to the /add page when the user clicks on the "Add to List" button. its not possible for user to access this page without clicking button. -->
                     <form action="/add" method="post">
-                    # post is gonna redirect the user to the /add page when the user clicks on the "Add to List" button. its not possible for user to access this page without clicking button.
                         Username: <input type="text" name="username" required>
                         Bio: <input type="text" name="bio" required>
                         <button type="submit">Add to List</button>
@@ -130,8 +130,8 @@ def edit_page(username: str):
     <html>
         <body style="font-family: sans-serif; padding: 50px;">
             <h1>Edit Profile for {username}</h1>
+            <!-- clicking save changes is basically a "post" request that will redirect user to /update/{{username}} page where the profile updated message would be shown, as in update_user function. -->
             <form action="/update/{username}" method="post">
-            # clicking save changes is basically a "post" request that will redirect user to /update/{username} page where the profile updated message would be shown, as in update_user function.
                 New Bio: <input type="text" name="new_bio" value="{target_user['bio']}" required>
                 <button type="submit">Save Changes</button>
             </form>
