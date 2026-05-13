@@ -1,10 +1,10 @@
-# 📓 Learning HTTP Requests and Responses
+# 📓 Learning HTTP Requests and Responses 
 
 This is the technical record of everything I learned during this project. 
 
 ### **The Journey:**
-1.  **Step 1: The Hello API (`hello_api.py`)**: My very first step. I learned how to create a basic "Hello World" endpoint and understood how the server responds to a simple GET request.
-2.  **Step 2: The Member Portal (`profile_api.py`)**: This was my "Graduation" project. While I started small, I mastered **everything else** listed in this report—CRUD, Persistence, HTML Forms, and advanced Python logic—by building this portal.
+1.  **Step 1: The Hello API (`hello_api.py`)**: My very first step. I learned how to create a basic "Hello World" endpoint and understood how the server responds to a simple GET request using FastAPI.
+2.  **Step 2: The Member Portal (`profile_api.py`)**: This was my "advanced" project. While I started small, I learned **everything else** listed in this report, CRUD, Persistence, HTML Forms, and advanced Python logic, by building this portal using FastAPI.
 
 ---
 

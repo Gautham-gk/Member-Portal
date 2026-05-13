@@ -86,7 +86,7 @@ def read_index():
                 </thead>
                 <tbody>
                     {rows}
-                    # rows variable informs python that this is where the username and bio are gonna be displayed.
+                    <!--rows variable informs python that this is where the username and bio are gonna be displayed.-->
                 </tbody>
             </table>
             </div>
